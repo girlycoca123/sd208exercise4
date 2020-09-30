@@ -1,0 +1,60 @@
+.main {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(199, 95, 86, 0.342)), url("a.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.card {
+    /* height: 450px; */
+    background-color: rgba(56, 43, 43, 0.7)
+}
+
+.form-control,
+.form-control:focus {
+    border-radius: 0;
+    background-color: transparent;
+    color: white;
+    font-family: 'Courgette';
+}
+
+.form-control:focus {
+    border: rgb(241, 113, 241) solid 2px;
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.txt {
+    animation: glitch .90s linear infinite;
+    font-size: 50px;
+    color: rgb(190, 28, 190);
+    font-family: 'Arial Narrow Bold', 'Aclonica';
+}
+
+.btn-violet,
+.btn-violet:hover,
+.btn-violet:active,
+.btn-violet:focus {
+    background-color: rgb(190, 28, 190);
+    border: none;
+    color: white;
+}
+
+@keyframes glitch {
+    2%,
+    64% {
+        transform: translate(2px, 0) skew(0deg);
+    }
+    4%,
+    60% {
+        transform: translate(-2px, 0) skew(0deg);
+    }
+    62% {
+        transform: translate(0, 0) skew(5deg);
+    }
+}
